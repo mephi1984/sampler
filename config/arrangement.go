@@ -2,7 +2,7 @@ package config
 
 import (
 	ui "github.com/gizak/termui/v3"
-	"github.com/mephi1984/sampler/console"
+	"github.com/sqshq/sampler/console"
 	"image"
 )
 

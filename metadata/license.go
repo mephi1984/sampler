@@ -1,7 +1,7 @@
 package metadata
 
 import (
-	"github.com/mephi1984/sampler/thirdparty/yaml.v3"
+	"gopkg.in/yaml.v3"
 	"log"
 )
 

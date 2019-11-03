@@ -1,7 +1,7 @@
 package config
 
 import (
-	"github.com/mephi1984/sampler/console"
+	"github.com/sqshq/sampler/console"
 )
 
 const (

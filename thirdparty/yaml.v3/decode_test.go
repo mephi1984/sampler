@@ -25,7 +25,7 @@ import (
 	"time"
 
 	. "gopkg.in/check.v1"
-	"github.com/mephi1984/sampler/thirdparty/yaml.v3"
+	"gopkg.in/yaml.v3"
 )
 
 var unmarshalIntTest = 123

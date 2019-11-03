@@ -2,7 +2,7 @@ package data
 
 import (
 	"fmt"
-	"github.com/mephi1984/sampler/config"
+	"github.com/sqshq/sampler/config"
 	"time"
 )
 

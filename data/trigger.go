@@ -2,9 +2,9 @@ package data
 
 import (
 	"fmt"
-	"github.com/mephi1984/sampler/asset"
-	"github.com/mephi1984/sampler/config"
-	"github.com/mephi1984/sampler/console"
+	"github.com/sqshq/sampler/asset"
+	"github.com/sqshq/sampler/config"
+	"github.com/sqshq/sampler/console"
 	"os"
 	"os/exec"
 	"regexp"

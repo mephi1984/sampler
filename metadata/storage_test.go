@@ -2,7 +2,7 @@ package metadata
 
 import (
 	"bytes"
-	"github.com/mephi1984/sampler/thirdparty/yaml.v3"
+	"gopkg.in/yaml.v3"
 	"io/ioutil"
 	"os"
 	"testing"
