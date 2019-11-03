@@ -11,6 +11,7 @@ require (
 	github.com/mitchellh/go-homedir v1.1.0
 	github.com/mitchellh/go-wordwrap v1.0.0 // indirect
 	gopkg.in/yaml.v3 v3.0.0-20190709130402-674ba3eaed22
+	github.com/kr/pty v0.0.0
 )
 
 replace github.com/gizak/termui/v3 => ./thirdparty/termui/v3
@@ -46,6 +47,11 @@ replace gopkg.in/check.v1 => ./thirdparty/check.v1
 replace golang.org/x/arch => ./thirdparty/arch
 
 replace rsc.io/pdf => ./thirdparty/pdf
+
+replace github.com/creack/pty => ./thirdparty/creack-pty
+
+replace github.com/kr/pty => ./thirdparty/kr-pty
+
 
 
 
