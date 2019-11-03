@@ -37,4 +37,10 @@ replace github.com/cjbassi/drawille-go => ./thirdparty/drawille-go
 
 replace github.com/nsf/termbox-go => ./thirdparty/termbox-go
 
+replace github.com/gopherjs/gopherwasm => ./thirdparty/gopherwasm
+
+replace github.com/gopherjs/gopherjs => ./thirdparty/gopherjs
+
+
+
 go 1.13
