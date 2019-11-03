@@ -3,7 +3,6 @@ package main
 import (
 	"fmt"
 	ui "github.com/gizak/termui/v3"
-	"github.com/sqshq/sampler/asset"
 	"github.com/sqshq/sampler/client"
 	"github.com/sqshq/sampler/component"
 	"github.com/sqshq/sampler/component/asciibox"

@@ -3,13 +3,13 @@ module github.com/sqshq/sampler
 require (
 	github.com/gizak/termui/v3 v3.0.0
 	github.com/jessevdk/go-flags v1.4.0
+	github.com/kr/pty v0.0.0
 	github.com/lunixbochs/vtclean v1.0.0
 	github.com/mattn/go-runewidth v0.0.4
 	github.com/mbndr/figlet4go v0.0.0-20190224160619-d6cef5b186ea
 	github.com/mitchellh/go-homedir v1.1.0
 	github.com/mitchellh/go-wordwrap v1.0.0 // indirect
 	gopkg.in/yaml.v3 v3.0.0-20190709130402-674ba3eaed22
-	github.com/kr/pty v0.0.0
 )
 
 replace github.com/gizak/termui/v3 => ./thirdparty/termui/v3
@@ -45,8 +45,5 @@ replace rsc.io/pdf => ./thirdparty/pdf
 replace github.com/creack/pty => ./thirdparty/creack-pty
 
 replace github.com/kr/pty => ./thirdparty/kr-pty
-
-
-
 
 go 1.11
