@@ -16,4 +16,4 @@ replace github.com/mitchellh/go-wordwrap => ../../go-wordwrap
 
 replace github.com/nsf/termbox-go => ../../termbox-go
 
-go 1.13
+go 1.11

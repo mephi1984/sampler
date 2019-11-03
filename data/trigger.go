@@ -2,7 +2,6 @@ package data
 
 import (
 	"fmt"
-	"github.com/sqshq/sampler/asset"
 	"github.com/sqshq/sampler/config"
 	"github.com/sqshq/sampler/console"
 	"os"

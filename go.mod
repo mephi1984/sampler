@@ -49,4 +49,4 @@ replace github.com/kr/pty => ./thirdparty/kr-pty
 
 
 
-go 1.13
+go 1.11
