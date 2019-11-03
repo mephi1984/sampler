@@ -22,7 +22,6 @@ type Trigger struct {
 	consumer      *Consumer
 	valuesByLabel map[string]Values
 	options       config.Options
-	player        *asset.AudioPlayer
 	digitsRegexp  *regexp.Regexp
 }
 
@@ -38,25 +37,24 @@ type Values struct {
 	previous string
 }
 
-func NewTriggers(cfgs []config.TriggerConfig, consumer *Consumer, options config.Options, player *asset.AudioPlayer) []*Trigger {
+func NewTriggers(cfgs []config.TriggerConfig, consumer *Consumer, options config.Options) []*Trigger {
 
 	triggers := make([]*Trigger, 0)
 
 	for _, cfg := range cfgs {
-		triggers = append(triggers, NewTrigger(cfg, consumer, options, player))
+		triggers = append(triggers, NewTrigger(cfg, consumer, options))
 	}
 
 	return triggers
 }
 
-func NewTrigger(config config.TriggerConfig, consumer *Consumer, options config.Options, player *asset.AudioPlayer) *Trigger {
+func NewTrigger(config config.TriggerConfig, consumer *Consumer, options config.Options) *Trigger {
 	return &Trigger{
 		title:         config.Title,
 		condition:     config.Condition,
 		consumer:      consumer,
 		valuesByLabel: make(map[string]Values),
 		options:       options,
-		player:        player,
 		digitsRegexp:  regexp.MustCompile("[^0-9]+"),
 		actions: &Actions{
 			terminalBell: *config.Actions.TerminalBell,
@@ -72,10 +70,6 @@ func (t *Trigger) Execute(sample *Sample) {
 
 		if t.actions.terminalBell {
 			fmt.Print(console.BellCharacter)
-		}
-
-		if t.actions.sound && t.player != nil {
-			t.player.Beep()
 		}
 
 		if t.actions.visual {

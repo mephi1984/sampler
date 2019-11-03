@@ -23,7 +23,6 @@ import (
 )
 
 type Starter struct {
-	player  *asset.AudioPlayer
 	lout    *layout.Layout
 	palette console.Palette
 	opt     config.Options
@@ -61,7 +60,7 @@ func (s *Starter) startAll() []*data.Sampler {
 
 func (s *Starter) start(drawable ui.Drawable, consumer *data.Consumer, componentConfig config.ComponentConfig, itemsConfig []config.Item, triggersConfig []config.TriggerConfig) *data.Sampler {
 	cpt := component.NewComponent(drawable, consumer, componentConfig)
-	triggers := data.NewTriggers(triggersConfig, consumer, s.opt, s.player)
+	triggers := data.NewTriggers(triggersConfig, consumer, s.opt)
 	items := data.NewItems(itemsConfig, *componentConfig.RateMs)
 	s.lout.AddComponent(cpt)
 	time.Sleep(10 * time.Millisecond) // desync coroutines
@@ -82,11 +81,6 @@ func main() {
 
 	console.Init()
 	defer console.Close()
-
-	player := asset.NewAudioPlayer()
-	if player != nil {
-		defer player.Close()
-	}
 
 	defer handleCrash(statistics, opt, bc)
 	defer updateStatistics(cfg, time.Now())
@@ -111,7 +105,7 @@ func main() {
 		}
 	}
 
-	starter := &Starter{player, lout, palette, opt, *cfg}
+	starter := &Starter{lout, palette, opt, *cfg}
 	samplers := starter.startAll()
 
 	handler := event.NewHandler(samplers, opt, lout)

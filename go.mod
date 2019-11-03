@@ -2,8 +2,6 @@ module github.com/sqshq/sampler
 
 require (
 	github.com/gizak/termui/v3 v3.0.0
-	github.com/hajimehoshi/go-mp3 v0.1.1
-	github.com/hajimehoshi/oto v0.1.1
 	github.com/jessevdk/go-flags v1.4.0
 	github.com/lunixbochs/vtclean v1.0.0
 	github.com/mattn/go-runewidth v0.0.4
@@ -15,10 +13,6 @@ require (
 )
 
 replace github.com/gizak/termui/v3 => ./thirdparty/termui/v3
-
-replace github.com/hajimehoshi/go-mp3 => ./thirdparty/go-mp3
-
-replace github.com/hajimehoshi/oto => ./thirdparty/oto
 
 replace github.com/jessevdk/go-flags => ./thirdparty/go-flags
 
