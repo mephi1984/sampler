@@ -3,11 +3,11 @@ package asciibox
 import (
 	ui "github.com/gizak/termui/v3"
 	fl "github.com/mbndr/figlet4go"
-	"github.com/sqshq/sampler/asset"
-	"github.com/sqshq/sampler/component"
-	"github.com/sqshq/sampler/config"
-	"github.com/sqshq/sampler/console"
-	"github.com/sqshq/sampler/data"
+	"github.com/mephi1984/sampler/asset"
+	"github.com/mephi1984/sampler/component"
+	"github.com/mephi1984/sampler/config"
+	"github.com/mephi1984/sampler/console"
+	"github.com/mephi1984/sampler/data"
 	"image"
 	"strings"
 )

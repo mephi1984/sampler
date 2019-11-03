@@ -2,7 +2,7 @@ package config
 
 import (
 	"fmt"
-	"github.com/sqshq/sampler/console"
+	"github.com/mephi1984/sampler/console"
 )
 
 func (c *Config) validate() {

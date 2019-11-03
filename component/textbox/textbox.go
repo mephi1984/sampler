@@ -2,10 +2,10 @@ package textbox
 
 import (
 	ui "github.com/gizak/termui/v3"
-	"github.com/sqshq/sampler/component"
-	"github.com/sqshq/sampler/config"
-	"github.com/sqshq/sampler/console"
-	"github.com/sqshq/sampler/data"
+	"github.com/mephi1984/sampler/component"
+	"github.com/mephi1984/sampler/config"
+	"github.com/mephi1984/sampler/console"
+	"github.com/mephi1984/sampler/data"
 	"image"
 )
 

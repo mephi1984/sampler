@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"encoding/json"
 	"errors"
-	"github.com/sqshq/sampler/metadata"
+	"github.com/mephi1984/sampler/metadata"
 	"io/ioutil"
 	"net/http"
 )

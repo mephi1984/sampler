@@ -3,8 +3,8 @@ package component
 import (
 	"fmt"
 	ui "github.com/gizak/termui/v3"
-	"github.com/sqshq/sampler/console"
-	"github.com/sqshq/sampler/metadata"
+	"github.com/mephi1984/sampler/console"
+	"github.com/mephi1984/sampler/metadata"
 	"image"
 )
 

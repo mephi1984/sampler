@@ -1,11 +1,11 @@
 package runchart
 
 import (
-	"github.com/sqshq/sampler/component"
-	"github.com/sqshq/sampler/component/util"
-	"github.com/sqshq/sampler/config"
-	"github.com/sqshq/sampler/console"
-	"github.com/sqshq/sampler/data"
+	"github.com/mephi1984/sampler/component"
+	"github.com/mephi1984/sampler/component/util"
+	"github.com/mephi1984/sampler/config"
+	"github.com/mephi1984/sampler/console"
+	"github.com/mephi1984/sampler/data"
 	"image"
 	"math"
 	"sync"

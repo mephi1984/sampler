@@ -2,9 +2,9 @@ package metadata
 
 import (
 	ui "github.com/gizak/termui/v3"
-	"github.com/sqshq/sampler/config"
-	"github.com/sqshq/sampler/console"
-	"gopkg.in/yaml.v3"
+	"github.com/mephi1984/sampler/config"
+	"github.com/mephi1984/sampler/console"
+	"github.com/mephi1984/sampler/thirdparty/yaml.v3"
 	"log"
 	"runtime"
 	"time"

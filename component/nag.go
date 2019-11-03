@@ -2,8 +2,8 @@ package component
 
 import (
 	ui "github.com/gizak/termui/v3"
-	"github.com/sqshq/sampler/component/util"
-	"github.com/sqshq/sampler/console"
+	"github.com/mephi1984/sampler/component/util"
+	"github.com/mephi1984/sampler/console"
 )
 
 type NagWindow struct {
