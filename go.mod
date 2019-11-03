@@ -41,6 +41,12 @@ replace github.com/gopherjs/gopherwasm => ./thirdparty/gopherwasm
 
 replace github.com/gopherjs/gopherjs => ./thirdparty/gopherjs
 
+replace gopkg.in/check.v1 => ./thirdparty/check.v1
+
+replace golang.org/x/arch => ./thirdparty/arch
+
+replace rsc.io/pdf => ./thirdparty/pdf
+
 
 
 go 1.13
